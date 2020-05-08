@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="Se_Q" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="b4H-WO-Rny" id="E9u-Xj-jWU"/>
+                <outlet property="textField" destination="tmq-CT-mVK" id="4cd-9G-gJ3"/>
+                <outlet property="titleLabel" destination="3N4-VW-n93" id="idf-3v-V7l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N4-VW-n93" userLabel="Title Label">
+                    <rect key="frame" x="0.0" y="0.0" width="570" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-WO-Rny" userLabel="Error label">
+                    <rect key="frame" x="0.0" y="114" width="570" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.52156862749999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmq-CT-mVK">
+                    <rect key="frame" x="0.0" y="31" width="570" height="73"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3N4-VW-n93" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9Ko-1l-Tz7"/>
+                <constraint firstAttribute="trailing" secondItem="3N4-VW-n93" secondAttribute="trailing" id="Awk-sh-kvD"/>
+                <constraint firstItem="tmq-CT-mVK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Eda-be-Pzb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b4H-WO-Rny" secondAttribute="trailing" id="Lfm-fp-ofm"/>
+                <constraint firstItem="b4H-WO-Rny" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b06-la-bXG"/>
+                <constraint firstAttribute="bottom" secondItem="b4H-WO-Rny" secondAttribute="bottom" id="c86-3n-Hff"/>
+                <constraint firstItem="3N4-VW-n93" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fjD-7g-kh3"/>
+                <constraint firstItem="tmq-CT-mVK" firstAttribute="top" secondItem="3N4-VW-n93" secondAttribute="bottom" constant="10" id="huM-cI-lcx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tmq-CT-mVK" secondAttribute="trailing" id="iwh-JJ-5f4"/>
+                <constraint firstItem="b4H-WO-Rny" firstAttribute="top" secondItem="tmq-CT-mVK" secondAttribute="bottom" constant="10" id="tec-Ov-svr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="118.84057971014494" y="-145.3125"/>
+        </view>
+    </objects>
+</document>
