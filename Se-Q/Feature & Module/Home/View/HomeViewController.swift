@@ -17,6 +17,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var productTableView: UITableView!
+    @IBOutlet weak var errorView: UIView!
     
     let viewModel: HomeViewModel
     let router: HomeRouter
@@ -43,6 +44,7 @@ class HomeViewController: BaseViewController {
         setupCollectionView()
         setupTableView()
         setupSelectedOnTableView()
+        setupReloadView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,6 +71,13 @@ class HomeViewController: BaseViewController {
             guard let weakSelf = self else {return}
             weakSelf.products = products.element ?? []
         }.disposed(by: disposeBag)
+    }
+    
+    private func setupReloadView(){
+        viewModel.isReload.subscribe(onNext: {[weak self] isReload in
+            guard let weakSelf = self else {return}
+            weakSelf.errorView.isHidden = !isReload
+        }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
     }
     
     private func setupCollectionView(){
@@ -108,4 +117,9 @@ class HomeViewController: BaseViewController {
             weakSelf.router.navToDetailProduct(product: model)
         }.disposed(by: disposeBag)
     }
+    
+    @IBAction func reloadButtonDidPush(_ sender: UIButton) {
+        viewModel.getList()
+    }
+    
 }

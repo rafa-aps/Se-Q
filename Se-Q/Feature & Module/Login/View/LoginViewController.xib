@@ -28,7 +28,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXY-JX-66q">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="502"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="472"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gA-9Y-v5f">
                                     <rect key="frame" x="169" y="20" width="76.5" height="30"/>
@@ -44,21 +44,21 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqn-1x-eGU" userLabel="Password View" customClass="TextFieldView" customModule="Se_Q" customModuleProvider="target">
-                                    <rect key="frame" x="30" y="185" width="354" height="40"/>
+                                    <rect key="frame" x="30" y="155" width="354" height="40"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" priority="250" constant="40" id="cSc-SL-GmI"/>
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhH-zw-r40" userLabel="Remember Me Button">
-                                    <rect key="frame" x="30" y="235" width="124" height="24"/>
+                                    <rect key="frame" x="30" y="205" width="124" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="Remember Me" image="uncheckbox">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-r0-sbb" userLabel="Sign In Button">
-                                    <rect key="frame" x="264" y="232" width="120" height="30"/>
+                                    <rect key="frame" x="264" y="202" width="120" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="120" id="UhL-ZA-XP2"/>
                                     </constraints>
@@ -68,7 +68,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW4-71-UyB" userLabel="Facebook Button">
-                                    <rect key="frame" x="50" y="362" width="314" height="50"/>
+                                    <rect key="frame" x="50" y="332" width="314" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="5Hf-sA-zjA"/>
                                     </constraints>
@@ -78,7 +78,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="no8-UW-03n" userLabel="Google Button">
-                                    <rect key="frame" x="50" y="422" width="314" height="50"/>
+                                    <rect key="frame" x="50" y="392" width="314" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="3w7-2o-CLq"/>
                                     </constraints>
@@ -98,7 +98,7 @@
                                 <constraint firstItem="xaP-r0-sbb" firstAttribute="trailing" secondItem="Uqn-1x-eGU" secondAttribute="trailing" id="6BV-QU-Hmg"/>
                                 <constraint firstAttribute="bottom" secondItem="no8-UW-03n" secondAttribute="bottom" constant="30" id="9pW-hb-N44"/>
                                 <constraint firstItem="jZg-t8-J2a" firstAttribute="leading" secondItem="fXY-JX-66q" secondAttribute="leading" constant="30" id="KOI-4z-7GU"/>
-                                <constraint firstItem="Uqn-1x-eGU" firstAttribute="top" secondItem="jZg-t8-J2a" secondAttribute="bottom" constant="40" id="SAd-Hp-EIB"/>
+                                <constraint firstItem="Uqn-1x-eGU" firstAttribute="top" secondItem="jZg-t8-J2a" secondAttribute="bottom" constant="10" id="SAd-Hp-EIB"/>
                                 <constraint firstItem="xaP-r0-sbb" firstAttribute="centerY" secondItem="yhH-zw-r40" secondAttribute="centerY" id="W1W-Nl-uUy"/>
                                 <constraint firstAttribute="trailing" secondItem="jZg-t8-J2a" secondAttribute="trailing" constant="30" id="Yk9-1K-dlT"/>
                                 <constraint firstItem="Uqn-1x-eGU" firstAttribute="leading" secondItem="fXY-JX-66q" secondAttribute="leading" constant="30" id="guc-wG-sKb"/>

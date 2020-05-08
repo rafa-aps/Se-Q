@@ -12,8 +12,11 @@ class CartViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       setupNavigationBar(titleString: "Cart")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigationBar(titleString: "Cart")
     }
 
 }

@@ -87,11 +87,14 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl8-lk-mJi">
                             <rect key="frame" x="210" y="10" width="100" height="45"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="3nT-O8-mJt"/>
                                 <constraint firstAttribute="width" constant="100" id="baZ-4p-Bog"/>
                             </constraints>
-                            <state key="normal" title="Buy"/>
+                            <state key="normal" title="Buy">
+                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </state>
                             <connections>
                                 <action selector="buyButtonDidPush:" destination="-1" eventType="touchUpInside" id="vbn-ue-9Cj"/>
                             </connections>
